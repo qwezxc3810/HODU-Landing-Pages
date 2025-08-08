@@ -205,7 +205,7 @@
     height: 4rem;
     border: none;
     border-radius: 6rem;
-    background-image: url(/img/mail.svg);
+    background-image: url(/HODU-Landing-Pages/img/mail.svg);
     background-size: 1.8rem 1.8rem;
     background-repeat: no-repeat;
     background-position: 1.6rem center;
@@ -359,10 +359,11 @@
     /* 포스트 입력 폼 */
 
     /* 입력폼 버튼 위치 다시잡기 */
-    /* 뷰포트의 크기에 따라 입력폼 안과 밖을 왔다갔다함 */
+    /* 뷰포트의 크기에 따라 입력폼 안에서 왔다갔다함 */
+    /* 다 키웠을떈 원하는 위치 */
     /* 해결방법: */
-    /*  버튼을 입력 폼 밖으로 뺀다? */
-    /* 어떻게 해야할까? */
+    /*  버튼을 입력 폼 안에 넣는 방법이 있나? */
+    /* 부모 요소를 인풋으로 할수 있는 방법은 없지.. */
     .subscribe-form {
         flex-direction: row;
         align-items: center;
