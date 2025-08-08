@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    src: url(/font/SpoqaHanSansNeo_OTF_original/SpoqaHanSansNeo-Regular.otf) format(opentype);
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Spoqa Han Sans Neo';
+    src: url(/font/SpoqaHanSansNeo_OTF_original/SpoqaHanSansNeo-Bold.otf) format(opentype);
+    font-style: normal;
+    font-weight: 700;
+}

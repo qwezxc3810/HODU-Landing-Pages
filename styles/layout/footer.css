@@ -1,0 +1,95 @@
+/* 모바일 퍼스트 */
+
+/* 푸터 */
+
+.footer-link-container {
+    margin-top: 17.2rem;
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 링크 콘텐츠 */
+.link-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5.8rem;
+    padding: 3rem 0;
+    margin-left: 2rem;
+}
+
+/* 호두 홈페이지 로고 */
+.link-hodu {
+    width: 11.2rem;
+    height: 3.4rem;
+}
+/* 호두 외부 링크 */
+.external-link {
+    display: flex;
+    gap: 1.6rem;
+    align-self: flex-end;
+}
+.blog img, .insta img,
+.facebook img, .youtube img {
+    width: 1.829rem;
+    height: 1.829rem;
+}
+.blog, .insta, .facebook, .youtube {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    background-color: #f29d52;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 호두 홈페이지 네비- 모바일에서만 존재 */
+.page-nav {
+    margin-right: 2rem;
+    padding: 3rem 0;
+}
+
+.page-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.page-nav-list li {
+    color: #767676;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+/* //푸터 */
+
+/* 데스크톱 */
+/* 푸터 */
+@media screen and (min-width:788px){
+    .footer-link-container {
+        margin-top: 24.6rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .link-content {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 82.6rem;
+    }
+    /* 호두 홈페이지 로고 */
+    .link-hodu {
+        width: 22.6rem;
+        height: 7rem;
+    }
+    /* 호두 외부 링크 */
+    .external-link {
+        align-self: auto;
+    }
+    /* 호두 홈페이지 네비 - 데스크톱 숨김 처리 */
+    .page-nav {
+        display: none;
+    }
+}
+/* //푸터 */

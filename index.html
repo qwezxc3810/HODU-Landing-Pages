@@ -4,8 +4,280 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HODU-Landing_page</title>
+    <!-- 리셋css -->
+    <link rel="stylesheet" href="/styles/base/reset.css">
+    <!-- 변수css -->
+    <link rel="stylesheet" href="/styles/base/variables.css">
+    <!-- 폰트css -->
+    <link rel="stylesheet" href="/styles/base/font.css">
+    <!-- 공통css -->
+    <link rel="stylesheet" href="/styles/global.css">
+    <!-- 헤더css -->
+    <link rel="stylesheet" href="/styles/layout/header.css">
+    <!-- 메인css -->
+    <link rel="stylesheet" href="/styles/layout/main.css">
+    <!-- 푸터css -->
+    <link rel="stylesheet" href="/styles/layout/footer.css">
+    <!-- 모달css -->
+    <link rel="stylesheet" href="/styles/layout/modal.css">
 </head>
 <body>
+    <!-- 최상단으로 가기 위한 태그 -->
+    <div id="top"></div>
+    <!-- //최상단으로 가기 위한 태그 -->
     
+    <!-- 헤더 -->
+    <header>
+        <section class="header-nav-containr">
+        <h1 class="sr-only">호두의 홈페이지</h1>
+        <!-- 헤더 메뉴 -->
+        <div class="header-nav">
+            <a href="/index.html">
+            <!-- 헤더 로고 -->
+                <img class="header-logo" src="/img/logo.png" alt="호두 홈페이지 바로가기">
+            </a>
+                <!-- 헤더 메뉴 버튼 - 모바일 -->
+                <button class="header-nav-btn" type="button">
+                    <img src="./img/menu.svg" alt="메뉴 버튼">
+                </button>
+
+                <!-- 헤더 메뉴 네비 - 데스크톱 -->
+                <div class="desktop-nav">
+                    <ul class="desktop-nav-list">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Support</li>
+                    </ul>
+                    <button class="desktop-nav-btn" type="button">Download</button>
+                </div>
+
+            </div>
+        </section>
+        <!-- //헤더 메뉴 -->
+        
+        <!-- 헤더 타이틀 섹션 -->
+        <section class="header-title-container">
+            <div class="header-title-content">
+                <h2 class="header-title">
+                Lorem Ipsum is simply
+
+                dummy text
+
+                of the printing and
+                </h2>
+                <p class="header-description">
+                    Lorem Ipsum is simply dummytext
+
+                    of the printing and typesetting industry.
+
+                    Lorem Ipsum has been the industry's
+
+                    standard dummy text ever since the 1500s,
+
+                    when an unknown
+                </p>
+                <button class="header-download-btn" type="button">Download</button>
+            </div>
+            <div class="box-cat">
+                <img src="/img/box-cat.png" alt="박스를 뒤집어 쓰고 있는 고양이 호두">
+            </div>
+        </section>
+        <!-- //헤더 타이틀 섹션 -->
+        
+
+    </header>
+    <!-- //헤더 -->
+
+    <!-- 메인 -->
+    <main>
+        <!-- 메인 소개 섹션 -->
+        <section class="main-intro-container">
+
+            <!-- 메인-인트로 콘텐츠 -->
+            <div class="intro-content">
+                <div class="intro-text-box">
+                    <h2 class="intro-title">
+                    Lorem Ipsum is simply
+                    
+                    dummy text of the printing
+                    
+                    and dummy text
+                    </h2>
+                    <p class="intro-description">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                    
+                    industry. 
+                    </p>
+                </div>
+                <img class="cat-on-bed" src="/img/img_4.jpg" alt="침대에 옆으로 누워서 어딘가를 쳐다보고 있는 고양이 호두">
+        </div>
+            <!-- //메인-인트로 콘텐츠 -->
+        </section> 
+            <!-- //메인 소개 섹션 -->
+            
+            <!-- 메인 이미지 섹션 -->
+            <section class="main-images-container">
+
+                <!-- 이미지 텍스트 콘텐츠 -->
+                <div class="images-text-content">
+                    <h2 class="images-title">
+                        dummy text of the printing and dummy
+                    </h2>
+                    <p class="images-description">
+                        Lorem Ipsum is simply <span class="strong">dummy text</span> of the printing and typesetting industry.
+
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+                    </p>
+                </div>
+                <!-- //이미지 텍스트 콘텐츠-->
+                
+                <!-- 이미지 콘텐츠 -->
+                <div class="images-content">
+                    <ul class="img-list">
+                        <li class="cat-on-tower">
+                            <img src="/img/img_1.jpg" alt="캣타워 위에서 어딘가를 쳐다보는 고양이 호두">
+                        </li>
+                        <li class="cat-staring-at-wall">
+                            <img src="/img/img_2.jpg" alt="벽을 쳐다보고 있는 고양이 호두">
+                        </li>
+                        <li class="cat-looking-at-camera">
+                            <img src="/img/img_3.jpg" alt="자신을 찍고있는 카메라를 응시하고 있는 고양이 호두">
+                        </li>
+                    </ul>
+                </div> 
+                <!-- //이미지 콘텐츠 -->
+                
+                <!-- 이미지 더보기  콘텐츠 -->
+                <div class="images-lern-more-content">
+                    <p class="lern-more-description">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        <br>
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        <br>
+                        Ipsum is simply dummy text of the printing and typesetting industry. 
+                    </p>
+                    <button class="lern-more-btn" type="button">
+                        Learn More
+                    </button>
+                </div>
+                <!-- //이미지 더보기 콘텐츠 -->
+            </section>
+            <!-- //메인 이미지 섹션 -->
+            
+            <!-- 블로그 포스트 입력 폼 섹션 -->
+            <section class="subscribe-container">
+                
+                <!-- 입력 폼 백그라운드 호두 이미지 -->
+                <div class="back-img-hodu">
+                </div>
+
+                <!-- 블로그 포스트 텍스트 콘텐츠 -->
+                <div class="subscribe-content">
+                <div class="subscribe-text-content">
+                    <h2 class="subscribe-title">
+                        Subscribe to our Blog post
+                    </h2>
+                    <p class="subscribe-description">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+                        Lorem Ipsum has been the industry's standard dummy text 
+                    </p>
+                </div>
+                <!-- //블로그 포스트 텍스트 콘텐츠 -->
+                
+                <!--  블로그 포스트 입력 폼   -->
+                    <form action="#" class="subscribe-form" id="blog-subscribe-form">
+                        <label for="email-input-field"></label>
+                        <input class="email-input" type="email" id="email-input-field" placeholder="Enter your e-mail address">
+                        <button class="subscribe-btn" type="button">
+                            Subscribe
+                        </button>
+                    </form>
+                    </div>
+                    <!-- //블로그 포스트 입력 폼 -->
+                </section>
+                <!-- //블로그 포스트 입력 폼 섹션 -->
+            </main>
+            <!-- //메인 -->
+            
+            
+            <!-- 푸터 -->
+            <footer>
+                <section class="footer-link-container">
+                <h2 class="sr-only">
+                    호두 홈페이지 외 블로그, 인스타, 페이스북, 유튜브 링크로 이동
+                </h2>
+                <div class="link-content">
+                    <img src="/img/logo.png" alt="호두 홈페이지 로고" class="link-hodu">
+                    <ul class="external-link">
+                        <li class="blog">
+                            <img src="/img/blog.svg" alt="블로그로 이동 버튼">
+                        </li>
+                        <li class="insta">
+                            <img src="/img/instagram.svg" alt="인스타그램으로 이동 버튼">
+                        </li>
+                        <li class="facebook">
+                            <img src="/img/facebook.svg" alt="페이스북으로 이동 버튼">
+                        </li>
+                        <li class="youtube">
+                            <img src="/img/youtube.svg" alt="유튜브로 이동 버튼">
+                        </li>
+                    </ul>
+                </div>
+                <div class="page-nav">
+                    <ul class="page-nav-list">
+                        <li>About</li>
+                        <li>Blog</li>
+                        <li>Support</li>
+                        <li>Terms of Use </li>
+                    </ul>
+                </div>
+            </section>
+        </footer>
+        <!-- //푸터 -->
+        
+
+        <!-- 최상단으로 가기 버튼 -->
+        <a class="scrool-to-top" href="#top">
+        </a>
+        <!-- //최상단으로 가기 버튼 -->
+        
+        <!-- 헤더 메뉴 모달 -->
+        <dialog class="header-nav-menu-modal" id="header-nav-modal">
+        <div class="nav-modal">
+            <img class="arrow-right" src="/img/arrow-right.svg" alt="오른쪽 화살표">
+            <ul class="nav-list">
+                <li>Home</li>
+                <li>About</li>
+                <li>Support</li>
+            </ul>
+            <button type="button" class="modal-download-btn">
+                Downliad
+            </button>
+        </div>
+    </dialog>
+    <!-- //헤더 메뉴 모달 -->
+
+    <!--블로그 입력 폼 모달 -->
+    <dialog id="blog-subscribe-form-modal" class="blog-subscribe-modal">
+        <div class="subscribe-modal">
+            <img src="/img/cat-subscribe.png" alt="볼터치를 한 고양이 호두의 얼굴">
+            <div class="subscribe-modal-text">
+                <p class="subscribe-modal-title">
+                Thank you!
+                </p>
+                <p class="subscribe-modal-description">
+                Lorem Ipsum is simply dummy
+                
+                text of the printing industry. 
+                </p>
+            </div>
+            <button class="subscribe-modal-btn" type="button">
+                OK! I Love HODU
+            </button>
+        </div>
+        </dialog>
+        <!-- //블로그 입력 폼 모달 -->
+
 </body>
 </html>
