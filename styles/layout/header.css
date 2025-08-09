@@ -24,6 +24,9 @@ header {
     border: none;
     width: 3.2rem;
     height: 3.2rem;
+    position: fixed;
+    top: 2.2rem;
+    right: 2rem;
 }
 
 /* 데스크톱 메뉴 버튼 */
