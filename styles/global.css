@@ -1,3 +1,11 @@
+/*  */
+@import url(./base/variables.css);
+@import url(./base/font.css);
+@import url(./layout/header.css);
+@import url(./layout/main.css);
+@import url(./layout/footer.css);
+@import url(./layout/modal.css);
+
 /* 기본 스타일 */
 *{
     box-sizing: border-box;
@@ -27,9 +35,3 @@ button {
         border: 0;
 }
 
-@import url(/styles/base/variables.css);
-@import url(/styles/base/font.css);
-@import url(/styles/layout/header.css);
-@import url(/styles/layout/main.css);
-@import url(/styles/layout/footer.css);
-@import url(/styles/layout/modal.css);
