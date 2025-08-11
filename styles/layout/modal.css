@@ -2,9 +2,10 @@
 
 /* 최상단으로 가기 버튼 */
 .scrool-to-top {
+    display: none;
     position: fixed;
-    width: 5em;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     color: #c4c4c4;
     background-color: #fff; 
     border-radius: 50%;
@@ -29,24 +30,30 @@
 /* 헤더 메뉴 모달 - 모바일만 사용 */
 .header-nav-menu-modal {
     display: none;
-    width: 28.9rem;
-    height: 82rem;
-    background-color: #263140;
+    width: 39rem;
+    height: 84.4rem;
+    background-color: #fff;
     border: none;
 }
 .nav-modal {
+    width: 28.9rem;
+    height: 82rem;
+    background-color: #263140;
     display: flex;
     flex-direction: column;
+    margin-left: 10rem;
 }
 /* 화살표 버튼 */
 .arrow-right {
-    margin: 2.2rem 0 0 2rem;
     width: 3.2rem;
     height: 3.2rem;
+    margin: 2.2rem 0 0 2rem;
 }
 /* 메뉴 리스트 */
 .nav-list {
-    margin: 6.6rem 5rem 0;
+    width: 6.5rem;
+    height: 12rem;
+    margin: 6.6rem 0 0 5rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -74,16 +81,16 @@
 
 /* 블로그 입력 폼 모달 */
 .blog-subscribe-modal {
+    width: 30rem;
+    height: 30rem;
     display: none;
     flex-direction: column;
     align-items: center;
-    width: 30rem;
-    height: 30rem;
     border: none;
     border-radius: 3rem;
     background-color: #f2e9d8;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
-    background-image: url(/img/form-modal-back-img.png);
+    background-image: url(/HODU-Landing-Pages/img/modal-bg-img.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
@@ -96,12 +103,14 @@
 }
 /* 호두 얼굴 이미지 */
 .subscribe-modal img {
-    margin: 4rem 12rem 0;
+    margin-top: 4rem;
     width: 6rem;
     height: 6.2rem;
 }
 /* 모달 텍스트 */
 .subscribe-modal-text {
+    width: 19.9rem;
+    height: 7.6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,7 +125,6 @@
 }
 /* 모달 텍스트 설명 */
 .subscribe-modal-description {
-    padding: 0 4rem;
     text-align: center;
     font-size: 1.4rem;
     font-weight: 400;
@@ -137,6 +145,20 @@
 }
 /* //블로그 입력 폼 모달 */
 
+/* 최상단으로가기 버튼 */
+@media screen and (min-width:788px){
+    .scrool-to-top {
+        display: block;
+    }
+}
+
+/* 헤더 메뉴 로고 - dexktop 숨김 처리 */
+@media screen and (min-width:788px){
+.header-nav-menu-modal {
+    display: none;
+    }
+}
+
 /* 블로그 입력 폼 모달 */
 @media screen and (min-width:788px) {
     .blog-subscribe-modal {
@@ -145,17 +167,19 @@
     }
     /* 호두 사진 */
     .subscribe-modal img {
-        margin: 6rem 24.5rem 0;
+        margin-top: 6rem;
         width: 11rem;
         height: 11.2rem;
     }
     /* 모달 텍스트 */
     .subscribe-modal-text {
+        width: 38.2rem;
+        height: 7.6rem;
         gap: 1.2rem;
     }
     .subscribe-modal-title {
         font-size: 3.6rem;
-        font-weight: 4.5rem;
+        line-height: 4.5rem;
     }
     /* 아이러브 호두 버튼*/
     .subscribe-modal-btn {

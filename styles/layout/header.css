@@ -3,15 +3,14 @@
 /* 헤더 */
 header {
     background-color: #f2e9d8;
-    position: relative;
-    overflow: hidden;
 }
 
 /* 헤더 메뉴 */
 .header-nav {
     display: flex;
     justify-content: space-between;
-    padding: 2.2rem 2rem;
+    align-items: center;
+    padding: 2.4rem 2rem;
 }
 
 .header-logo {
@@ -24,9 +23,6 @@ header {
     border: none;
     width: 3.2rem;
     height: 3.2rem;
-    position: fixed;
-    top: 2.2rem;
-    right: 2rem;
 }
 
 /* 데스크톱 메뉴 버튼 */
@@ -50,6 +46,9 @@ header {
     border-radius: 4rem; 
     background-color: #d97652;
     color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2rem;
 }
 /* //헤더 메뉴 */
 
@@ -63,12 +62,13 @@ header {
 .header-title-content {
     display: flex;
     flex-direction: column; 
-    gap: 16rem;
+    gap: 15.8rem;
     align-items: center;
-    padding: 0 6.2rem;
 }
 /* 헤더 타이틀 */
 .header-title {
+    max-width: 26.4rem;
+    height: 9rem;
     text-align: center;
     font-size: var(--large-font-size);
     font-weight: 700;
@@ -95,7 +95,6 @@ header {
 
 /* 헤더 박스캣 이미지 */
 .box-cat {
-    margin-top: 3rem;
     width: 19.7rem;
     height: 42.2rem;
     display: grid;
@@ -147,12 +146,17 @@ header {
         gap: 4rem;
     }
     .header-title {
+        max-width: 73.4rem;
+        height: 12rem;
         line-height: 6rem;
         text-align: left;
     }
     .header-description {
         display: block;
-        
+        width: 43.8rem;
+        height: 8.6rem;
+        align-self: flex-start;
+        word-break: keep-all;
     }
     .header-download-btn {
         align-self: flex-start;
@@ -161,16 +165,13 @@ header {
         margin-top: 0;
         width: 41.5rem;
         height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        overflow: visible;
-        
+        overflow: hidden;
     }
     .box-cat img {
         width: 41.5rem;
+        height: 76.6rem;
         height: auto;
-        object-fit: contain;
+        object-fit: cover;
     }
 }
 /* //헤더 타이틀 콘텐츠 */

@@ -2,4 +2,6 @@
     --large-font-size: clamp(2.4rem, 2.5vw, 4.8rem);
     --mideum-font-size: clamp(2.4rem, 1.5vw, 3.6rem);
     --regular-font-size: clamp(1.4rem, 1.2vw, 1.6rem);
+    --mobile-content-max-width: 32.6rem;
+    --desktop-content-max-width: 128rem;
 }
