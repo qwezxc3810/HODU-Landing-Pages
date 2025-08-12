@@ -1,178 +1,135 @@
-/* 모바일 퍼스트 */
-
 /* 헤더 */
-header {
+.header {
     background-color: #f2e9d8;
+    overflow: hidden;
+    height: 80.2rem;
+    padding: clamp(2rem, calc((100vw - 1280px) / 2), 32rem);
+    padding-top: 3rem;
 }
-
 /* 헤더 메뉴 */
 .header-nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 2.4rem 2rem;
 }
-
+/* 헤더 로고 */
 .header-logo {
     width: 9.2rem;
-    height: 2.8rem;
+    height: auto;
 }
-/* 모바일 메뉴 버튼 */
+/* 모바일 헤더 메뉴 버튼 */
 .header-nav-btn {
-    background: none;
-    border: none;
     width: 3.2rem;
-    height: 3.2rem;
+    height: auto;
+    background: none;
 }
-
-/* 데스크톱 메뉴 버튼 */
+/* 모바일 환경 숨김 처리 */
 .desktop-nav {
     display: none;
-    gap: 4rem;
 }
-.desktop-nav-list {
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-}
-.desktop-nav-btn {
-    width: 14rem;
-    height: 5rem;
-    border: none;
-    border-radius: 4rem; 
-    background-color: #d97652;
-    color: #fff;
-    font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 2rem;
-}
-/* //헤더 메뉴 */
-
-/* 헤더 타이틀 콘텐츠 */
+/* 헤더 메뉴 */
 .header-title-container {
+    margin-top: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 4rem;
+    justify-content: center;
+    gap: 5.5rem;
 }
-.header-title-content {
+.header-text-content {
     display: flex;
-    flex-direction: column; 
-    gap: 15.8rem;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 15.8rem;
 }
 /* 헤더 타이틀 */
 .header-title {
-    max-width: 26.4rem;
-    height: 9rem;
-    text-align: center;
     font-size: var(--large-font-size);
     font-weight: 700;
-    line-height: 3.5rem;
+    line-height: 3rem;
+    text-align: center;
 }
-/* 헤더 텍스트 모바일버전에서는 숨김 처리 */
+/* 모바일 환경 숨김 처리 */
 .header-description {
     display: none;
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 2rem;
 }
 /* 헤더 다운로드 버튼 */
 .header-download-btn {
-    background-color: #d97652;
-    border-radius: 4rem;
-    border: none;
     width: 11.9rem;
     height: 4rem;
-    color: #fff;
-    font-size: var(--regular-font-size);
-    font-weight: 700;
 }
-
-/* 헤더 박스캣 이미지 */
-.box-cat {
-    width: 19.7rem;
-    height: 42.2rem;
-    display: grid;
-    align-items: end;
-    overflow: hidden;
-}
+/* 박스캣 이미지 */
 .box-cat img {
-    width: 100%;
-    height: auto;
-    transform: translateY(15%);
+    width: 19.7rem;
+    aspect-ratio: 197 / 422;
+    transform: translateY(5%);
 }
-/* //헤더 */
 
-
-/* 데스크톱 */
-
-/* 헤더 */
-
-/* 헤더 메뉴 */
-@media screen and (min-width:788px) {
-    .header-nav {
-        justify-content: space-around;
+@media screen and (min-width: 788px) {
+    .header {
+        height: 90.2rem;
     }
+    /* 헤더 로고 */
     .header-logo {
         width: 13rem;
         height: 4rem;
     }
-    /* 모바일 메뉴 숨김 처리 */
-    .header-nav-btn, .header-nav-btn img {
+    /* 모바일 메뉴 숨김처리 */
+    .header-nav-btn {
         display: none;
     }
-    /* 데스크톱 메뉴 */
+    /* 데스크톱 메뉴 플렉스 */
     .desktop-nav {
         display: flex;
-    }
-}
-/* //헤더 메뉴 */
-
-/* 헤더 타이틀 콘텐츠 */
-@media screen and (min-width:788px) {
-    .header-title-container {
-        flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
-        gap: 13rem;
-        padding: 0 32rem;
-    }
-    .header-title-content {
         gap: 4rem;
     }
-    .header-title {
-        max-width: 73.4rem;
-        height: 12rem;
-        line-height: 6rem;
-        text-align: left;
+    .desktop-nav-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
     }
+    /* 데스크톱 메뉴 버튼 */
+    .desktop-nav-btn {
+        width: 14rem;
+        height: 5rem;
+    }
+    
+    /* 헤더 타이틀 */
+    .header-title-container {
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: space-around;
+}
+    
+    .header-text-content {
+        align-items: flex-start;
+        gap: 4rem;
+    }
+
+    /* 헤더 타이틀 */
+    .header-title {
+        text-align: left;
+        line-height: 6rem;
+    }
+    /* 헤더 텍스트 */
     .header-description {
         display: block;
-        width: 43.8rem;
-        height: 8.6rem;
-        align-self: flex-start;
-        word-break: keep-all;
+        max-width: 43.8rem;
+        font-size: 1.6rem;
+        line-height: 2rem;
     }
+    /* 헤더 다운로드 */
     .header-download-btn {
-        align-self: flex-start;
+        width: 14rem;
+        height: 5rem;
     }
-    .box-cat {
-        margin-top: 0;
-        width: 41.5rem;
-        height: auto;
-        overflow: hidden;
-    }
+    /* 박스캣*/
     .box-cat img {
         width: 41.5rem;
-        height: 76.6rem;
-        height: auto;
-        object-fit: cover;
+        aspect-ratio: 415 / 766;
+        transform: translateY(21%);
     }
 }
-/* //헤더 타이틀 콘텐츠 */
-/* //헤더 */

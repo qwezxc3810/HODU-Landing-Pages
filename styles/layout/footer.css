@@ -73,8 +73,7 @@
     .link-content {
         width: 100%;
         flex-direction: row;
-        justify-content: center;
-        gap: 82.6rem;
+        justify-content: space-around;
     }
     /* 호두 홈페이지 로고 */
     .link-hodu {

@@ -2,7 +2,7 @@
 
 /* 최상단으로 가기 버튼 */
 .scrool-to-top {
-    display: none;
+    display: block;
     position: fixed;
     width: 4rem;
     height: 4rem;
@@ -90,7 +90,7 @@
     border-radius: 3rem;
     background-color: #f2e9d8;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
-    background-image: url(/HODU-Landing-Pages/img/modal-bg-img.png);
+    background-image: url(../../../HODU-Landing-Pages/img/modal-bg-img.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;

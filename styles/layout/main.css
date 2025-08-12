@@ -6,8 +6,9 @@
 }
 /* 메인 */
 .main-intro-container {
-    max-width: var(--mobile-content-max-width);
+    margin-top: 4rem;
     align-self: center;
+    padding-inline: clamp(3.2rem, calc((100vw - 1280px) / 2), 32rem);
 }
 /* 메인 인트로 */
 .intro-content {
@@ -21,7 +22,6 @@
 .cat-on-bed {
     width: 32.6rem;
     height: 19rem;
-    margin-top: 4rem;
     object-fit: cover;
     border-radius: 1.8rem;
     box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.25);
@@ -50,9 +50,9 @@
 
 /* 메인 이미지 섹션 */
 .main-images-container {
-    margin-top: 6rem;
-    max-width: var(--mobile-content-max-width);
+    max-width: 100%;
     align-self: center;
+    margin-top: 6rem;
 }
 /* 이미지 텍스트 콘텐츠 */
 .images-text-content {
@@ -61,6 +61,7 @@
     align-items: center;
     gap: 3rem;
     text-align: center;
+    padding-inline: clamp(3.2rem, calc((100vw - 1280px) / 2), 32rem);
 }
 
 /* 이미지 텍스트 타이틀 */
@@ -76,6 +77,7 @@
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 2rem;
+    text-align: center;
 }
 
 /* 이미지 설명-스판태그 강조 */
@@ -88,9 +90,10 @@
 
 /* 메인 이미지 콘텐츠 */
 .images-content {
-    margin-top: 4rem;
     overflow-x: auto;
     white-space: nowrap;
+    margin-top: 4rem;
+    padding-inline: clamp(3.2rem, calc((100vw - 1280px) / 2), 32rem);
 }
 
 .img-list {
@@ -113,7 +116,7 @@
     flex-direction: column;
     align-items: center;
     gap: 3rem;
-    position: relative;
+    padding-inline: clamp(3.2rem, calc((100vw - 1280px) / 2), 32rem);
 }
 
 /* 이미지 더보기 텍스트 */
@@ -147,6 +150,7 @@
     margin-top: 5rem;
     overflow: hidden;
     z-index: 0;
+    padding-inline: clamp(3.2rem, calc((100vw - 1280px) / 2), 32rem);
 }
 /* 고양이 호두 얼굴 이미지 */
 .subscribe-container::before {
@@ -157,7 +161,7 @@
     transform: translateX(-50%);
     width: 100%;
     height: 24rem;
-    background: url(/HODU-Landing-Pages/img/img_5.jpg) no-repeat center 30% / cover;
+    background: url(../../../HODU-Landing-Pages/img/img_5.jpg) no-repeat center 30% / cover;
     z-index: -1;
     opacity: 0.6;
 }
@@ -171,7 +175,7 @@
     background-color: #263140;
     border: none;
     border-radius: 1.8rem;
-    max-width: var(--mobile-content-max-width);
+    max-width: 100%;
     padding: 3.6rem 3.2rem;
     gap: 1rem;
 }
@@ -185,8 +189,6 @@
 }
 /* 블로그 포스트 텍스트 타이틀 */
 .subscribe-title {
-    width: 19.4rem;
-    height: 6rem;
     font-size: var(--mideum-font-size);
     font-weight: 700;
     line-height: 3rem;
@@ -195,8 +197,6 @@
 
 /* 블로그 포스트 텍스트 설명 */
 .subscribe-description {
-    width: 26.2rem;
-    height: 7.2rem;
     color: #f2e9d8;
     font-size: 1.4rem;
     font-weight: 400;
@@ -218,7 +218,7 @@
     height: 4rem;
     border: none;
     border-radius: 6rem;
-    background-image: url(/HODU-Landing-Pages/img/mail.svg);
+    background-image: url(../../../HODU-Landing-Pages/img/mail.svg);
     background-size: 1.8rem 1.8rem;
     background-repeat: no-repeat;
     background-position: 1.6rem center;
@@ -244,21 +244,20 @@
 
 /* 데스크톱 */
 /* 메인 */
-
 /* 메인 인트로 */
 @media screen and (min-width:788px) {
     .main-intro-container {
-        max-width: var(--desktop-content-max-width);
+        margin-top: 8rem;
     }
     .intro-content {
-        margin: 8rem;
         flex-direction: row-reverse;
         justify-content: center;
         gap: 11rem;
     }
     .cat-on-bed {
-        min-width: 66rem;
-        min-height: 39rem;
+        max-width: 66rem;
+        width: 100%;
+        height: 39rem;
         border-radius: 3rem;
     }
     .intro-text-box {
@@ -279,7 +278,6 @@
 @media screen and (min-width:788px) {
     .main-images-container {
         margin-top: 12rem;
-        max-width: var(--desktop-content-max-width);
     }
     .images-text-content {
         gap: 4rem;
@@ -288,7 +286,6 @@
         line-height: 6rem;
     }
     .images-description {
-        width: 73.7rem;
         font-size: 1.6rem;
         line-height: 2rem;
     }
@@ -303,16 +300,16 @@
 @media screen and (min-width:788px) {
     .images-content {
         margin-top: 8.8rem;
-        overflow-x: hidden;
+        padding-inline: clamp(3.2rem, calc((100vw - 1280px) / 2), 32rem);
     }
-    .img-list {
-        justify-content: center;
+    .img-list { 
         gap: 7.2rem;
     }
     .img-list li img {
         width: 37.8rem;
         height: 37.8rem;
         border-radius: 3rem;
+        flex-shrink: 0;
     }
 }
 /* //메인 이미지 콘텐츠 */
@@ -338,20 +335,20 @@
 /* 블로그 포스트 입력 폼 섹션 */
 @media screen and (min-width:788px) {
     .subscribe-container {
-        margin-top: 9.6rem;
+        margin-top: 9rem;
     }
     /* 고양이 호두 얼굴 이미지 */
     .subscribe-container::before {
-        width: 192rem;
+        width: 100%;
         height: 34rem;
         background-position: 50% 42%;
     }
     /* 블로그 포스트 입력 폼 콘텐츠 */
     .subscribe-content {
-        min-width: 128rem;
+        max-width: 128rem;
+        width: 100%;
         height: 20rem;
         flex-direction: row;
-        gap: 14.4rem;
         border-radius: 3rem;
         justify-content: space-between;
         align-items: center;
@@ -359,15 +356,8 @@
     }
     /* 블로그 포스트 텍스트 콘텐츠 */
     .subscribe-text-content {
-        width: 49rem;
-        height: 10rem;
-        align-items: center;
+        align-items: flex-start;
         gap: 1.8rem;
-    }
-    .subscribe-title,
-    .subscribe-description {
-        width: 100%;
-        height: 100%;
     }
     /* //블로그 포스트 텍스트 콘텐츠 */
 
@@ -383,21 +373,19 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        position: relative;
     }
     .email-input {
         width: 53rem;
         height: 6rem;
         background-size: 2.4rem 2.4rem;
-        background-position: 2.8rem center;
-        padding-left: 6.4rem;
-        position: relative;
     }
     .subscribe-btn {
+        position: absolute;
         width: 13.6rem;
         height: 5rem;
-        align-self: center;
-        position: absolute;
-        right: 19.5%;
+        right: 5px;
+        top: 5px;
     }
 }
 /* 버튼 위치를 어떻게 잡아야 할지..? */
