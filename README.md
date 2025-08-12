@@ -26,7 +26,7 @@
 * BEM(Block, Element, Modifier): CSS를 체계적으로 관리하고 유지보수를 용이하게 하기 위해 적용
        
 ### 1-3 팀 구성
-- 개인 프로젝트로 1인 개발
+- 이상민 - 개인 프로젝트로 1인 개발
 
 
 ## 2. 개발 환경 및 배포 URL
@@ -61,6 +61,52 @@
 ## 4. 프로젝트 구조와 개발 일정
 
 4-1 프로젝트 구조
+```
+.
+├── Demo-images
+│   ├── Group 1.png
+│   └── Group 2.png
+├── font
+│   └── SpoqaHanSansNeo_OTF_original
+│       ├── LICENSE
+│       ├── SpoqaHanSansNeo-Bold.otf
+│       └── SpoqaHanSansNeo-Regular.otf
+├── img
+│   ├── arrow-left.svg
+│   ├── arrow-right.svg
+│   ├── blog.svg
+│   ├── box-cat.png
+│   ├── cat-subscribe.png
+│   ├── facebook.svg
+│   ├── form-modal-back-img.png
+│   ├── img_1.jpg
+│   ├── img_2.jpg
+│   ├── img_3.jpg
+│   ├── img_4.jpg
+│   ├── img_5.jpg
+│   ├── instagram.svg
+│   ├── keyboard_arrow_up.svg
+│   ├── logo.png
+│   ├── logo.svg
+│   ├── mail.svg
+│   ├── menu.svg
+│   ├── modal-bg-img.png
+│   ├── top-btn.svg
+│   └── youtube.svg
+├── index.html
+├── README.md
+└── styles
+    ├── base
+    │   ├── font.css
+    │   ├── reset.css
+    │   └── variables.css
+    ├── global.css
+    └── layout
+        ├── footer.css
+        ├── header.css
+        ├── main.css
+        └── modal.css
+```
 
 4-2 개발 일정
 25.08.07(목) ~ 25.08.12(화) (주말 제외 총 4일)
@@ -69,10 +115,10 @@
 ## 5. 화면
 
 ### 5-1 데스크톱 메인 화면
-![데스크톱 메인 화면]()
+![데스크톱 메인 화면](Demo-images/Group-1.png)
 
 ### 5-2 모바일 화면
-![모바일 화면]()
+![모바일 화면](Demo-images/Group-2.png)
 
 ## 6. 문제와 문제 해결
 
