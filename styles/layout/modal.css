@@ -34,6 +34,10 @@
     height: 84.4rem;
     background-color: #fff;
     border: none;
+    position: absolute;
+    top: 0%;
+    right: 0;
+    z-index: 1000;
 }
 .nav-modal {
     width: 28.9rem;
