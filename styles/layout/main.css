@@ -128,6 +128,7 @@
 
 /* 이미지 더보기 버튼 */
 .lern-more-btn {
+    padding: 0;
     width: 12.6rem;
     height: 4rem;
     font-size: var(--regular-font-size);
