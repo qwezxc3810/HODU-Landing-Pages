@@ -62,7 +62,6 @@
 .box-cat img {
     width: 19.7rem;
     aspect-ratio: 197 / 422;
-    transform: translateY(5%);
 }
 
 @media screen and (min-width: 788px) {
