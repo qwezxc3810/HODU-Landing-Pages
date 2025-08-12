@@ -15,12 +15,12 @@
     bottom: 10rem;
     z-index: 100;
     object-fit: cover;
-    background-image: url(/HODU-Landing-Pages/img/top-btn.svg);
+    background-image: url(../../../HODU-Landing-Pages/img/top-btn.svg);
     background-position: 50% 50%;
 }
 .scrool-to-top:hover {
     cursor: pointer;
-    background-image: url(/HODU-Landing-Pages/img/keyboard_arrow_up.svg);
+    background-image: url(../../../HODU-Landing-Pages/img/keyboard_arrow_up.svg);
 }
 /* //최상단으로 가기 버튼 */
 
