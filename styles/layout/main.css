@@ -5,12 +5,58 @@
     flex-direction: column;
 }
 /* 메인 */
+
+/* 메인 타이틀 콘테이너 */
+.main-title-container {
+    background-color: #f2e9d8;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(2rem, calc((100vw - 1280px) / 2), 32rem);
+}
+.main-text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+/* 메인 타이틀 */
+.main-title {
+    min-width: 26.4rem;
+    font-size: var(--large-font-size);
+    font-weight: 700;
+    line-height: 5rem;
+    text-align: center;
+}
+/* 메인 설명 */
+.main-description {
+    min-width: 28rem;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+/* 메인 다운로드 버튼 */
+.main-download-btn {
+    width: 11.9rem;
+    height: 4rem;
+}
+/* 박스캣 이미지 */
+.box-cat img {
+    width: 19.7rem;
+    aspect-ratio: 197 / 422;
+    transform: translateY(15%);
+}
+
+/* 메인 인트로 */
 .main-intro-container {
     margin-top: 4rem;
     align-self: center;
     padding-inline: clamp(3.2rem, calc((100vw - 1280px) / 2), 32rem);
 }
-/* 메인 인트로 */
 .intro-content {
     display: flex;
     flex-direction: column-reverse;
@@ -245,6 +291,49 @@
 
 /* 데스크톱 */
 /* 메인 */
+
+/* 메인 타이틀 콘테이너 */
+@media screen and (min-width: 788px) {
+    .main-title-container {
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 0;
+        padding-bottom: 3rem;
+        gap: 12.8rem;
+}
+    
+    .main-text-content {
+        align-items: flex-start;
+        gap: 4rem;
+    }
+
+    /* 메인 타이틀 */
+    .main-title {
+        max-width: 73.7rem;
+        text-align: left;
+        line-height: 6rem;
+    }
+    /* 메인 텍스트 */
+    .main-description {
+        max-width: 43.8rem;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        text-align: left;
+    }
+    /* 메인 다운로드 */
+    .main-download-btn {
+        width: 14rem;
+        height: 5rem;
+    }
+    /* 박스캣*/
+    .box-cat img {
+        width: 41.5rem;
+        aspect-ratio: 415 / 766;
+        transform: translateY(16%);
+    }
+}
 /* 메인 인트로 */
 @media screen and (min-width:788px) {
     .main-intro-container {
@@ -374,6 +463,7 @@
     /* 해결방법: */
     /*  버튼을 입력 폼 안에 넣는 방법이 있나? */
     /* 부모 요소를 인풋으로 할수 있는 방법은 없지.. */
+    /* 인풋폼에 포지션 릴레이티브 버튼에 앱솔루트 포지션 줘서 위치 고정 및 설정 */
     .subscribe-form {
         flex-direction: row;
         align-items: center;
