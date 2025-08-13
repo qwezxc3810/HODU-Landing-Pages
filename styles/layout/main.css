@@ -49,13 +49,12 @@
 .box-cat img {
     width: 19.7rem;
     aspect-ratio: 197 / 422;
-    transform: translateY(15%);
+    transform: translateY(5%);
 }
 
 /* 메인 인트로 */
 .main-intro-container {
     margin-top: 4rem;
-    align-self: center;
     padding-inline: clamp(3.2rem, calc((100vw - 1280px) / 2), 32rem);
 }
 .intro-content {
@@ -68,10 +67,10 @@
 /* 인트로 이미지 */
 .cat-on-bed {
     width: 32.6rem;
-    height: 19rem;
-    object-fit: cover;
+    aspect-ratio: 326 / 190;
     border-radius: 1.8rem;
     box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.25);
+    object-fit: cover;
 }
 /* 인트로 텍스트 박스 */
 .intro-text-box {
@@ -325,7 +324,6 @@
     .box-cat img {
         width: 41.5rem;
         aspect-ratio: 415 / 766;
-        transform: translateY(16%);
     }
 }
 /* 메인 인트로 */
@@ -339,8 +337,8 @@
         gap: 11rem;
     }
     .cat-on-bed {
-        max-width: 66rem;
-        width: 100%;
+        width: 66rem;
+
         height: 39rem;
         border-radius: 3rem;
     }

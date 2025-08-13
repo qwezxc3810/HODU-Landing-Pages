@@ -35,7 +35,12 @@
                 <!-- 헤더 로고 -->
                 <h1> <span class="sr-only">호두의 홈페이지</span>
                     <a href="../HODU-Landing-Pages/index.html" aria-label="홈페이지로 이동">
-                        <img class="header-logo" src="../HODU-Landing-Pages/img/logo.png" alt="">
+                    <picture>
+                        <source srcset="./img/logo-s.png" media="(max-width: 768px)">
+                        <source srcset="./img/logo-m.png" media="(min-width: 769px) and (max-width: 1200px)">
+                        <source srcset="./img/logo-l.png" media="(min-width: 1201px)">
+                        <img class="title-logo" src="./img/logo-m.png" alt="">
+                    </picture>
                         <!-- alt="" ? -->
                         <!-- h1태그의 호두의 홈페이지를 스크린리더가 읽기때문에 중복되기때문에 alt설명을 넣지않았음 -->
                         <!-- alt를 지우면 이미지 파일의 이름을 읽기때문에 공백으로 놔둠 -->
@@ -89,7 +94,12 @@
             </div>
             <!-- 메인 박스캣 이미지 -->
             <div class="box-cat">
-                <img src="../HODU-Landing-Pages/img/box-cat.png" alt="박스를 뒤집어 쓰고 있는 고양이 호두">
+                <picture>
+                    <source srcset="./img/box-cat-s.png" media="(max-width: 768px)">
+                    <source srcset="./img/box-cat-m.png" media="(min-width: 769px) and (max-width: 1200px)">
+                    <source srcset="./img/box-cat-l.png" media="(min-width: 1201px)">
+                    <img class="title-logo" src="./img/box-cat-m.png" alt="박스를 뒤집어 쓰고 있는 고양이 호두">
+                </picture>
             </div>
         </section>
         <!-- //메인 타이틀 섹션 -->
@@ -115,7 +125,8 @@
                         industry. 
                     </p>
                 </div>
-                <img class="cat-on-bed" src="../HODU-Landing-Pages/img/img_4.jpg" alt="침대에 옆으로 누워서 어딘가를 쳐다보고 있는 고양이 호두">
+                    <img class="cat-on-bed" src="./img/img_4.jpg" alt="침대에 옆으로 누워서 어딘가를 쳐다보고 있는 고양이 호두">
+            </div>
             </div>
             <!-- //메인-인트로 콘텐츠 -->
         </section> 
@@ -214,8 +225,13 @@
             <h2 class="sr-only">
                 호두 홈페이지 외 블로그, 인스타, 페이스북, 유튜브 링크로 이동
             </h2>
-            <div class="link-content">
-                <img src="../HODU-Landing-Pages/img/logo.png" alt="호두 홈페이지 로고" class="link-hodu">
+            <a class="link-content" href="#">
+                    <picture>
+                        <source srcset="./img/logo-s.png" media="(max-width: 768px)">
+                        <source srcset="./img/logo-m.png" media="(min-width: 769px) and (max-width: 1200px)">
+                        <source srcset="./img/logo-l.png" media="(min-width: 1201px)">
+                        <img class="title-logo" src="./img/logo-m.png" alt="호두 홈페이지">
+                    </picture>
                 <ul class="external-link">
                     <li class="blog">
                         <img src="../HODU-Landing-Pages/img/blog.svg" alt="블로그로 이동 버튼">
@@ -230,7 +246,7 @@
                         <img src="../HODU-Landing-Pages/img/youtube.svg" alt="유튜브로 이동 버튼">
                     </li>
                 </ul>
-            </div>
+            </a>
             <div class="page-nav">
                 <ul class="page-nav-list">
                     <li>About</li>
