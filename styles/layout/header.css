@@ -31,7 +31,6 @@
 @media screen and (min-width: 788px) {
     .header {
         height: 10.2rem;
-        position: static;
         padding-bottom: 3.2rem;
     }
     /* 헤더 로고 */
