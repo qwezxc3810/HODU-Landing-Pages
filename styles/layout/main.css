@@ -324,6 +324,7 @@
     .box-cat img {
         width: 41.5rem;
         aspect-ratio: 415 / 766;
+        transform: translateY(18%);
     }
 }
 /* 메인 인트로 */
